@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css?family=Barrio&subset=latin-ext');
+body {
+    background-color: rgb(175, 217, 238);
+}
+
+.thin-white-border {
+    border-color: white;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 50%;
+}
+
+.just-border {
+    border-color: rgb(175, 217, 238);
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 50%;
+}
+
+.esl_-image {
+    width: 50px;
+    float: left;
+}
+
+.free-image {
+    width: 50px;
+    float: left;
+}
+
+.ogam-image {
+    width: 50px;
+    float: left;
+}
+
+.cret-image {
+    width: 50px;
+    float: left;
+}
+
+.noob-image {
+    width: 50px;
+    float: left;
+}
+
+h1 {
+    font-family: 'Barrio', cursive;
+    color: #8e7569;
+}
+
+.esl_-grid {
+    background-color: rgb(252, 248, 227);
+}
+
+.free-grid {
+    background-color: rgb(252, 248, 227);
+}
+
+.ogam-grid {
+    background-color: rgb(252, 248, 227);
+}
+
+.cret-grid {
+    background-color: rgb(252, 248, 227);
+}
+
+.noob-grid {
+    background-color: rgb(252, 248, 227);
+}
+
+div.container4 {
+    height: 6em;
+    position: relative
+}
+
+div.container4 p {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    right: 50%;
+    width: 12em;
+    transform: translate(-50%, -50%);
+    font-family: 'Barrio', cursive;
+}
