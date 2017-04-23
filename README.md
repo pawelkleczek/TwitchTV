@@ -18,3 +18,6 @@ Otherwise, it will show the channel is offline, and logo will be in grayscale.
 ![alt tag](images/offline.png)
 
 I've used some Bootstrap, and jQuery. Data from Twitch is collected with getJSON cammand.
+
+Check it out on CodePen:
+https://codepen.io/pawelkleczek/full/oZvzGL/
