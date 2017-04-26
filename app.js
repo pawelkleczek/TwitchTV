@@ -1,35 +1,35 @@
 function url(channel) {
-    var http = "https://wind-bow.gomix.me/twitch-api/streams/" + channel + "?callback=?"
+    var http = 'https://wind-bow.gomix.me/twitch-api/streams/' + channel + '?callback=?'
     return http;
 }
 
-var esl_ = url("ESL_SC2");
-var free = url("freecodecamp");
-var ogam = url("OgamingSC2");
-var cret = url("cretetion");
-var noob = url("noobs2ninjas");
+var esl_ = url('ESL_SC2');
+var free = url('freecodecamp');
+var ogam = url('OgamingSC2');
+var cret = url('cretetion');
+var noob = url('noobs2ninjas');
 
 $.getJSON(esl_, function(data) {
     if (data.stream == null) {
-        $("#esl_").html("<div class='container4'><p class='text-center'>Channel Offline</p></div>");
-        $(".esl_-image").css("filter", "grayscale(100%)");
-        $(".esl_-grid").css("background-color", "rgb(153,153,153)");
+        $('#esl_').html('<div class="container4"><p class="text-center">Channel Offline</p></div>');
+        $('.esl_-image').css('filter', 'grayscale(100%)');
+        $('.esl_-grid').css('background-color', 'rgb(153,153,153)');
     } else
-        $("#esl_").html("<div class='container4'><p class='text-center'><a href='" + data.stream.channel.url + "' target='_blank'>" + data.stream.channel.status + "</a></p></div>");
+        $('#esl_').html('<div class="container4"><p class="text-center"><a href="' + data.stream.channel.url + '" target="_blank">' + data.stream.channel.status + '</a></p></div>');
 });
 
 $.getJSON(free, function(data) {
     if (data.stream == null) {
-        $("#free").html("<div class='container4'><p class='text-center'>Channel Offline</p></div>");
-        $(".free-image").css("filter", "grayscale(100%)");
-        $(".free-grid").css("background-color", "rgb(153,153,153)");
+        $('#free').html('<div class="container4"><p class="text-center">Channel Offline</p></div>');
+        $('.free-image').css('filter', 'grayscale(100%)');
+        $('.free-grid').css('background-color', 'rgb(153,153,153)');
     } else
-        $("#free").html("<div class='container4'><p class='text-center'><a href='" + data.stream.channel.url + "' target='_blank'>" + data.stream.channel.status + "</a></p></div>");
+        $('#free').html('<div class="container4"><p class="text-center"><a href="' + data.stream.channel.url + '" target="_blank">' + data.stream.channel.status + '</a></p></div>');
 });
 
 $.getJSON(ogam, function(data) {
     if (data.stream == null) {
-        $("#ogam").html("<div class='container4'><p class='text-center'>Channel Offline</p></div>");
+        $('#ogam').html("<div class='container4'><p class='text-center'>Channel Offline</p></div>");
         $(".ogam_-image").css("filter", "grayscale(100%)");
         $(".ogam-grid").css("background-color", "rgb(153,153,153)");
     } else
